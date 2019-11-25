@@ -1,4 +1,4 @@
-package org.myleraning.notification.email;
+package org.mylearning.notification.email;
 import java.util.Properties;
 
 import javax.mail.BodyPart;

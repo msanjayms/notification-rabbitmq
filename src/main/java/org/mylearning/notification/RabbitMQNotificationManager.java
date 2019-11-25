@@ -1,11 +1,11 @@
 package org.mylearning.notification;
 
 import org.apache.commons.lang.SerializationUtils;
+import org.mylearning.notification.email.EmailSender;
 import org.mylearning.notification.event.NotificationEvent;
 import org.mylearning.notification.event.NotificationEventStatus;
 import org.mylearning.notification.handlers.NotificationEventHandler;
 import org.mylearning.notification.sms.SMSSender;
-import org.myleraning.notification.email.EmailSender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -78,7 +78,7 @@ public class RabbitMQNotificationManager {
 	}
 
 	public static void tearDownNotificationManager() throws Exception {
-		logger.info("Stopping Authorization Notification Manager");
+		logger.info("Stopping Notification Manager");
 		if (notificationEventHandler != null)
 			notificationEventHandler.tearDown();
 		logger.warn("Stoping Wibmo Analytics Rest Client Helper");

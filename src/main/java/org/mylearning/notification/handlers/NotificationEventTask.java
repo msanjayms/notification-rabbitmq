@@ -3,11 +3,11 @@ package org.mylearning.notification.handlers;
 import java.util.concurrent.Callable;
 
 import org.mylearning.notification.RabbitMQNotificationManager;
+import org.mylearning.notification.email.EmailSender;
 import org.mylearning.notification.event.NotificationEvent;
 import org.mylearning.notification.event.NotificationEventStatus;
 import org.mylearning.notification.event.NotificationEventType;
 import org.mylearning.notification.sms.SMSSender;
-import org.myleraning.notification.email.EmailSender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
